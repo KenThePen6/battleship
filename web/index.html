@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Battleship</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="head">
+      <h1>Battleship</h1>
+      <p class="tagline">A browser rebuild of my C# console game — same rules, more GUI. Sink the enemy fleet before it sinks yours.</p>
+    </header>
+
+    <section class="controls" id="controls">
+      <div class="phase" id="phase-label">Phase: Place your fleet</div>
+      <div class="btn-row">
+        <button id="btn-rotate" class="btn">Rotate: <b id="orient">Horizontal</b></button>
+        <button id="btn-random" class="btn">Random placement</button>
+        <button id="btn-clear" class="btn">Clear</button>
+        <button id="btn-start" class="btn btn-primary" disabled>Start Battle</button>
+        <button id="btn-new" class="btn btn-ghost hidden">New Game</button>
+      </div>
+      <div class="roster" id="roster"></div>
+    </section>
+
+    <section class="boards">
+      <div class="board-col">
+        <h2>Your Fleet</h2>
+        <div class="board" id="player-board" aria-label="Your fleet board"></div>
+      </div>
+      <div class="board-col">
+        <h2>Enemy Waters</h2>
+        <div class="board" id="enemy-board" aria-label="Enemy waters board"></div>
+      </div>
+    </section>
+
+    <section class="log-wrap">
+      <div class="scoreline">
+        <span>Your ships left: <b id="player-left">5</b></span>
+        <span>Enemy ships left: <b id="enemy-left">5</b></span>
+      </div>
+      <ul class="log" id="log"></ul>
+    </section>
+
+    <footer class="foot">
+      Built by Kenan Al-Khateeb · <a href="https://github.com/KenThePen6" target="_blank" rel="noreferrer">GitHub</a>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

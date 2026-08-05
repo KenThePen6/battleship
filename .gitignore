@@ -1,0 +1,10 @@
+# Build output
+bin/
+obj/
+# IDE / OS
+.vs/
+.vscode/
+.DS_Store
+*.user
+# Archives
+*.zip

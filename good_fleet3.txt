@@ -1,0 +1,5 @@
+Carrier; (5,5); Horizontal
+Battleship; (0,6); Vertical
+Destroyer; (7,0); Vertical
+Submarine; (2,9); Horizontal
+Patrol Boat; (9,7); Vertical

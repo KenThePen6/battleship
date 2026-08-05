@@ -1,0 +1,7 @@
+# Bad Fleet – ship runs off the board (all ships included)
+
+Carrier; (7,9); Horizontal
+Battleship; (0,0); Vertical
+Destroyer; (4,4); Horizontal
+Submarine; (6,8); Vertical
+Patrol Boat; (9,9); Horizontal

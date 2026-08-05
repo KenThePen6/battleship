@@ -1,0 +1,7 @@
+# Bad Fleet – ships extend past board limits
+
+Carrier; (7,0); Horizontal
+Battleship; (0,8); Vertical
+Destroyer; (8,5); Horizontal
+Submarine; (5,9); Vertical
+Patrol Boat; (9,9); Horizontal
